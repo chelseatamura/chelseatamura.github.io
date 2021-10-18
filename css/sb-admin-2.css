@@ -11280,7 +11280,9 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
-.pendo-resource-center-badge-notification-bubble {
+
+/*** RESOURCE CENTER - STYLE COUNT OVER TARGET ELEMENT***/
+/*.pendo-resource-center-badge-notification-bubble {
   top:unset!important;
   left:unset!important;
   height:13px!important;
@@ -11295,9 +11297,30 @@ body.sidebar-toggled footer.sticky-footer {
   width:13px!important;
   font-size:9px!important;
   line-height:13px!important
+}*/
+
+/*** RESOURCE CENTER - STYLE COUNT OVER TARGET ELEMENT BUT REPLACE # WITH "NEW" ***/
+.pendo-resource-center-badge-notification-bubble {
+    left: 23px!important;
+    border-radius: 0.25rem!important;
+    height: 13px!important;
+    top: 23px!important;
+    width: 30px!important;
 }
 
-#pendo-guide-container
+.pendo-notification-bubble-unread-count {
+    font-size: 9px!important;
+    line-height: 13px!important;
+    color: transparent!important;
+}
+
+.pendo-notification-bubble-unread-count:before {
+    color: #FFF!important;
+    content: "NEW ";
+}
+
+/*** TEST GUIDE STYLING ***/
+/*#pendo-guide-container
 {
   background-color: #D40000!important;
-}
+}*/
